@@ -1,6 +1,8 @@
 @media (min-width: 320px) { 
     .intro{
-        padding-top: 125px;
+        padding-top: 80px;
+        padding-bottom: 50px;
+       
         &__title{
             font-size: 26px;
             span{
@@ -13,6 +15,7 @@
             font-size: 14px;
             line-height: 25px;
             margin-left: 22px;
+            margin-bottom: 27px;
             position: relative;
             &::after{
                 content: "";
@@ -25,8 +28,27 @@
                 left: -22px;
             }
         }
+        &__subtitle{
+            font-size: 13px;
+            line-height: 18px;
+            &:nth-child(2){
+               font-size: 12px;
+            }
+        }
+        &__btn{
+            border: 1px solid $lime;
+            border-radius: 0;
+            color: $wht;
+            margin-top: 36px;
+            width: 246px;
+            height: 42px;
+            font-weight: lighter;
+            padding-bottom: 16px;
+            &:active{
+                color: rgba(255, 255, 255, 0.748);
+            }
+        }
     }
-
 }
 
 @media (min-width: 576px) {
@@ -38,15 +60,26 @@
             font-size: 18px;
             line-height: 32px;
         }
+        &__subtitle{
+            font-size: 16px;
+            line-height: 26px;
+            &:nth-child(2){
+               font-size: 15px;
+            }
+        }
     }
 }
 
 @media (min-width: 1200px) {
-
     .intro{
+        padding-top: 125px;
+        padding-bottom: 113px;
         &__title_lime{
             font-size: 21px;
             width: 564px;
+        }
+        &__subtitle{
+            width: 560px;
         }
     }
 }
