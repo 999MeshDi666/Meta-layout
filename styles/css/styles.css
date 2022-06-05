@@ -85,6 +85,7 @@ p {
 
   .swiper {
     width: 100%;
+    padding-bottom: 30px;
   }
   .swiper .swiper-slide {
     background-position: center;
@@ -112,6 +113,50 @@ p {
   .swiper .swiper-slide {
     width: 360px;
     height: 520px;
+  }
+}
+@media (min-width: 320px) {
+  .intro {
+    padding-top: 125px;
+  }
+  .intro__title {
+    font-size: 26px;
+  }
+  .intro__title span {
+    color: #A8A8A8;
+  }
+  .intro__title_lime {
+    color: #8DFD1B;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 25px;
+    margin-left: 22px;
+    position: relative;
+  }
+  .intro__title_lime::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 100%;
+    background-color: #8DFD1B;
+    position: absolute;
+    top: 0px;
+    left: -22px;
+  }
+}
+@media (min-width: 576px) {
+  .intro__title {
+    font-size: 38px;
+  }
+  .intro__title_lime {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+@media (min-width: 1200px) {
+  .intro__title_lime {
+    font-size: 21px;
+    width: 564px;
   }
 }
 
