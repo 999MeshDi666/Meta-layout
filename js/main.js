@@ -1,4 +1,4 @@
-var swiper = new Swiper('.swiper',{
+var swiperCoverflow = new Swiper('.swiper_coverflow',{
   effect: 'coverflow',
   grabCursor: true,
   centeredSlides: true,
@@ -31,3 +31,37 @@ var swiper = new Swiper('.swiper',{
   }
      
 });
+
+
+var swiperDefault = new Swiper('.swiper_default',{
+  speed: 1000,
+  slidesPerView: 3,
+  allowTouchMove: false,
+  grabCursor: false,
+  centeredSlides: true,
+  loop: true,
+ 
+  breakpoints: {
+    320: {
+      spaceBetween: 50,
+      slidesPerView: 2,
+    },
+    576:{
+      spaceBetween: 270,
+    },
+    992:{
+      spaceBetween: 230,
+    },
+    1200:{
+      spaceBetween: 400,
+    },
+    1400:{
+      spaceBetween: 700,
+    }
+   
+  }
+});
+
+window.addEventListener('scroll', ()=>{
+  swiperDefault.slideNext();
+})

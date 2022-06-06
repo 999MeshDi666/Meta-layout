@@ -1,0 +1,53 @@
+@media (min-width: 320px) { 
+    .artists{
+        padding-top: 80px;
+        padding-bottom: 150px;
+    
+    }
+    .swiper_default {
+        width: 100%;
+        height: 100%;
+    }
+  
+    .swiper-slide_default {
+      
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 30px;
+        font-family: $audioWide;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &::before{
+            display: none; 
+        }
+    }
+   
+    
+}
+
+@media (min-width: 576px) {
+    .swiper-slide_default {
+        font-size: 40px;
+    }
+ }
+ 
+@media (min-width: 992px) {
+    .swiper-slide_default {
+        font-size: 56px;
+    }
+ }
+
+@media (min-width: 1200px) {
+    .artists{
+        padding-top: 113px;
+        padding-bottom: 258px;
+    }
+    .swiper-slide_default {
+        font-size: 80px;
+    }
+   
+
+}
+
+
