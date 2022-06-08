@@ -1,39 +1,7 @@
 @media (min-width: 320px) { 
     .intro{
         padding-top: 80px;
-       
-        &__title{
-            font-size: 26px;
-            span{
-                color: $bgry;
-            }
-        }
-        &__title_lime{
-            color: $lime;
-            font-weight: lighter;
-            font-size: 14px;
-            line-height: 25px;
-            margin-left: 22px;
-            margin-bottom: 27px;
-            position: relative;
-            &::after{
-                content: "";
-                display: block;
-                width: 2px;
-                height: 100%;
-                background-color: $lime;
-                position: absolute;
-                top: 0px;
-                left: -22px;
-            }
-        }
-        &__subtitle{
-            font-size: 13px;
-            line-height: 18px;
-            &:nth-child(2){
-               font-size: 12px;
-            }
-        }
+        
         &__btn{
             border: 1px solid $lime;
             border-radius: 0;
@@ -50,35 +18,10 @@
     }
 }
 
-@media (min-width: 576px) {
-    .intro{
-        &__title{
-            font-size: 38px;
-        }
-        &__title_lime{
-            font-size: 18px;
-            line-height: 32px;
-        }
-        &__subtitle{
-            font-size: 16px;
-            line-height: 26px;
-            &:nth-child(2){
-               font-size: 15px;
-            }
-        }
-    }
-}
+
 
 @media (min-width: 1200px) {
     .intro{
         padding-top: 125px;
-       
-        &__title_lime{
-            font-size: 21px;
-            width: 564px;
-        }
-        &__subtitle{
-            width: 560px;
-        }
     }
 }
