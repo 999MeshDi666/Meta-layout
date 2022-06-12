@@ -16,6 +16,15 @@ p {
   font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
 @media (min-width: 320px) {
   .sn-group__links {
     width: 35px;
@@ -253,18 +262,55 @@ p {
   }
 }
 @media (min-width: 320px) {
+  .story {
+    padding-bottom: 120px;
+  }
   .story__title {
-    margin-left: 0px;
+    margin-bottom: 42px;
+  }
+  .story__btn {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    height: 72px;
+    padding-bottom: 10px;
+    padding-left: 28px;
+    border: 0;
+    color: #fff;
+    background: transparent;
+    font-weight: lighter;
+    text-align: left;
+  }
+  .story__btn:focus {
+    color: #8DFD1B;
+    background: #222222;
+  }
+}
+@media (min-width: 576px) {
+  .story__title {
+    margin-bottom: 61px;
+    margin-left: 100px;
   }
 }
 @media (min-width: 768px) {
   .story__title {
+    font-size: 32px;
     margin-left: 200px;
+  }
+}
+@media (min-width: 992px) {
+  .story__btn {
+    width: 282px;
+  }
+  .story__title {
+    font-size: 32px;
+    margin-left: 320px;
   }
 }
 @media (min-width: 1200px) {
   .story__title {
-    margin-left: 400px;
+    font-size: 38px;
+    margin-left: 440px;
   }
 }
 
